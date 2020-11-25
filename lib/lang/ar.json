@@ -1,0 +1,160 @@
+{
+
+
+
+    "welcome_to":"مرحبا بك في",
+    "lacasa_deals":"لاكاسا ديلز",
+    "LACASA_deals":"لاكاسا ديلز",
+    "welcome_to_lacasa": "مرحبا بك في لاكاسا ديلز",
+    "if_received_messsage":"اذا وصلتك رسالة نصية من لاكاسا ديلز، اضغط هنا للتحقق من حسابك",
+    "verify_account": "تأكيد حسابي",
+    "or":"أو",
+    "otherwise": "أو، يمكنك تسجيل حساب جديد من هنا",
+    "create_account": "إصنع حساب",
+    "login_account": "تسجيل الدخول",
+    "customer":"الزبون",
+    "staff":"العاملين",
+    "loginn":"تسجيل الدخول",
+    "staff_login": "دخول الموظفين",
+
+    "example":"مثال: 0599123456",
+    "enter_mobile_number": "أدخل رقم الهاتف المتحرك",
+    "get_otp": "تحقق من رقم الهاتف المحمول",
+    "back_screen": "العودة للخلف --->",
+
+    "set_password": "تحديد كلمة المرور",
+    "confirm_continue": "تأكيد ومتابعة",
+
+    "new_offer": "عروض جديدة",
+    "browse_offers": "كل العروض",
+    "new_campaigns": "حملات جديدة",
+    "browse_campaigns": "جميع الحملات",
+
+    "customer_name": "اسم العميل",
+    "home": "اللوحة الرئيسية",
+    "offers": "العروض",
+    "campaigns": "الحملات",
+    "earn_points": "النقاط",
+    "redeem_points": "استبدال النقاط",
+    "my_profile": "حسابي",
+    "logout": "تسجيل الخروج",
+
+
+    "browse_lacasa_offers": "تصفح عروض لاكايا",
+    "offer_home": "البيت",
+    "supermarket": "السوبرماركت",
+    "fashion_accessories": "الفاشن والإكسسوارات",
+    "health_beauty": "الصحة والجمال",
+    "optics": "البصريات",
+
+
+    "all_offers": "جميع العروض",
+    "claim": "احصل على العرض",
+    "claim_offer": "احصل على العرض",
+    "qr_code": "كود QR",
+    "qr_code_merchant": "إظهار رمز الـQR  للتاجر",
+    "customer_number": "رقم العميل",
+    "customer_number_merhcnat": "قدم رقم العميل الخاص بك إلى الموظف",
+
+    "Keep_dialog_confirmation": "اترك هذه الشاشة مفتوحة حتى تحصل عليتأكيد",
+    "close": "إغلاق",
+    "give_number_merchant": "Gقدم هذا الرقم للموظف",
+    "profile": "الحساب",
+    "change_password": "تغيير كلمة المرور",
+    "your_name": "الإسم",
+    "mobile_number": "البريد الإلكتروني",
+    "your_email": "البريد الإلكتروني",
+    "current_password": "كلمة المرور الحالية",
+    "update": "تحديث",
+
+    "your_old_Password": "كلمة مرورك القديمة",
+    "your_new_Password": "كلمة سرك الجديدة",
+    "confirm_Password": "تأكيد كلمة المرور",
+
+
+    "all_campaign": "جميع الحملات",
+    "join": "انضم",
+    "earn_points": "اكسب نقاط",
+    "get_points_spend": "اكسب نقاط لكل مبلغ تشتري به",
+    "enter_code": "ادخل الرمز",
+    "merchant_enter_code": "التاجر أدخل الرمز",
+    "customer_number": "رقم العميل",
+
+    "qr_code_des": "اضغط هنا وأظهر كود الـQR للموظف",
+    "enter_code_des": "أدخل الرمز الذي تلقيته من الموظف للحصول على النقاط",
+    "merchant_enter_code_des": "أعط هاتفك للموظف حتى يتمكن من إدخال الرمز",
+    "customer_number_des": "زوّد الموظف برقم العميل الخاص بك حتى يتمكن من إضافة النقاط",
+
+    "logout": "تسجيل خروج",
+    "want_to_logout": "هل تريد حقًا تسجيل الخروج؟",
+    "yes": "نعم",
+    "no": "لا",
+
+    "reward": "استبدال النقاط",
+    "point": "نقطة",
+    "points": "نقاط",
+    "earn_point_reward": "قم باستبدال نقاطك بهذه المكافآت",
+    "redeem": "استبدل",
+
+    "redeem_reward": "استبدل نقاطك بهذه المكافأة",
+    "show_qr_code": "اضغط هنا وأظهر كود الـQR للموظف",
+    "give_phone": "أعط هاتفك للموظف",
+    "provide_number": "زوّد الموظف برقم العميل الخاص بك",
+
+    "show_qr_merchant": "أظهر كود الـQR للموظف",
+    "get_qr_confirmation": "اترك هذه الشاشة مفتوحة حتى تحصل عليتأكيد",
+
+    "let_merchant_code": "الموظف يُدخل الرمز",
+    "hand_over_device": "أعط هاتفك للموظف حتى يتمكن من إدخال الرمز",
+    "enter_code_here": "أدخل الرمز هنا",
+    "verify": "تأكيد",
+
+    "customer_number": "رقم العميل",
+    "code_merchant_below": "الرجاء إدخال الرمز الذي تلقيته من التاجر أدناه",
+    "generate_code": "إنشاء التعليمات البرمجية",
+    "customer_points": "امنح العملاء نقاطًا",
+    "customer_points_des": "فيما يلي الخيارات المتاحة للعميل لكسب النقاط",
+    "redeem_rewards": "استرداد المكافآت",
+    "redeem_rewards_des": "فيما يلي الخيارات المتاحة للعميل لاستبدال النقاط",
+
+
+
+
+    "staf_home": "اللوحة الرئيسية",
+    "staf_offer": "العروض",
+    "staf_points": "النقاط",
+    "staf_rewards": "استبدال النقاط",
+    "staf_my_profile": "حسابي",
+    "staf_logout": "تسجيل خروج",
+
+    "recent_activities": "آخر الحركات",
+
+    "claim_customer_number": "عرض المطالبة برقم العميل",
+    "claim_customer_des": "حدد عرضًا وأدخل رقم العميل للمطالبة بهذا العرض لهذا العميل",
+    "cutomer_claim_offer": "فيما يلي الخيارات المتاحة للعميل للمطالبة بالعروض.",
+
+    "": "//new",
+    "cus_log":"تسجيل دخول العميل",
+    "customer_login": "تسجيل العميل",
+    "sign_up": "سجل",
+    "i_agree": "أنا أوافق على ",
+    "terms_condition": "الشروط والسياسة",
+    "forgot_password": "هل نسيت كلمة المرور؟",
+    "login": "تسجيل الدخول",
+    "forgot_password_no_qmark": "هل نسيت كلمة المرور",
+    "submit": "إرسال",
+    "set_new_password": "تعيين كلمة مرور جديدة",
+
+    "your_name": "اسمك",
+    "your_email": "بريدك الالكتروني",
+    "mobile_number": "رقم الهاتف المحمول",
+    "enter_password": "أدخل كلمة المرور",
+    "password": "كلمه السر",
+    "otp_code": "رمز OTP ",
+    "new_password": "كلمة مرور جديدة",
+    "confirm_new_password": "تأكيد كلمة المرور الجديدة",
+
+    "customer_displays_a_QR": "يعرض العميل رمز الاستجابة السريعة QR Code الذي يمكنك مسحه ضوئيًا",
+    "add_points_to_customer": "أضف النقاط إلى حساب العميل باستخدام رقم العميل",
+    "generate_a_code_to_customer": "قم بإنشاء رمز يمكن أن يقدم للعميل"
+}

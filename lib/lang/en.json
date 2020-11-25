@@ -1,0 +1,176 @@
+{
+
+    "welcome_to":"Welcome to",
+    "lacasa_deals":"Lacasa Deals",
+    "LACASA_deals":"LACASA Deals",
+    "welcome_to_lacasa": "Welcome to Lacasa Deals",
+    "if_received_messsage": "If you received an SMS message from Lacasa Deals, verifiy your account",
+    "verify_account": "Verify your account",
+    "or":"or",
+    "otherwise": "Otherwise, you can sign up here",
+    "create_account": "Create Account",
+    "login_account": "Logon to your account",
+    "customer":"CUSTOMER",
+    "staff":"STAFF",
+    "loginn":"LOGIN",
+    "staff_login": "Staff                Login",
+    
+    "example":"Ex : 0599123456",
+    "enter_mobile_number": "Enter Mobile Number",
+    "get_otp": "Verify Mobile Number",
+    "back_screen": "<-- or go back to welcome screen",
+
+    "set_password": "Set Your Password",
+    "confirm_continue": "Confirm & Continue",
+
+    "new_offer": "New Offers",
+    "browse_offers": "All Offers",
+    "new_campaigns": "New Campaigns",
+    "browse_campaigns": "All Campaigns",
+
+    "customer_name": "Customer Name",
+    "home": "Home",
+    "offers": "Offers",
+    "campaigns": "Campaigns",
+    "redeem_points": "Redeem Points",
+    "my_profile": "My Profile",
+
+    "browse_lacasa_offers": "Discover           LACASA Offers",
+    "offer_home": "Home",
+    "supermarket": "SuperMarket",
+    "fashion_accessories": "Fashion & Accessories",
+    "health_beauty": "Health & Beauty",
+    "optics": "optics",
+
+    "all_offers": "All offers",
+    "claim": "Claim",
+    "qr_code": "QR CODE",
+    "qr_code_merchant": "Show QR code to merchant",
+    "customer_number_merhcnat": "Provide your customer number to the merchant",
+
+
+    "Keep_dialog_confirmation": "Keep this dialog open untill you get a confirmation",
+    "close": "close",
+    "give_number_merchant": "Give this number to the merchant",
+    "profile": "PROFILE",
+    "change_password": "CHANGE PASSWORD",
+    "your_name": "YOUR NAME",
+    "mobile_number": "MOBILE NUMBER",
+    "your_email": "YOUR EMAIL",
+    "current_password": "CURRENT PASSWORD",
+    "update": "UPDATE",
+
+
+    "your_old_Password": "Your Old Password",
+    "your_new_Password": "Your New Password",
+    "confirm_Password": "Confirm Password",
+
+
+    "all_campaign": "All Campaigns",
+    "join": "Join",
+    "earn_points": "Earn Points",
+    "get_points_spend": "Get points for every dollar you spend",
+    "enter_code": "Enter Code",
+    "merchant_enter_code": "Merchant Enter Code",
+
+
+    "qr_code_des": "Click this button and scan the QR code to claim the points",
+    "enter_code_des": "Enter the code you received from the merchant to claim the points",
+    "merchant_enter_code_des": "Hand over your phone so that the merchant can enter the code",
+    "customer_number_des": "Provide your customer number so the merchant can add points",
+
+
+
+    "logout": "Logout",
+    "want_to_logout": "Do you really want to LogOut?",
+    "yes": "Yes",
+    "no": "No",
+
+
+    "reward": "Reward",
+    "point": "Point",
+    "points": "Points",
+    "earn_point_reward": "Earn points and choose from these rewards",
+    "redeem": "REDEEM",
+
+
+    "redeem_reward": "Redeem this Reward",
+    "show_qr_code": "'Show QR code to merchant'",
+    "give_phone": "Give phone to merchant",
+    "provide_number": "Provide your customer number to the merchant",
+
+
+    "show_qr_merchant": "Show QR Code to merchant",
+    "get_qr_confirmation": "Keep this dialog open untill you get a confirmation",
+
+
+    "let_merchant_code": "Let Merchant enter code",
+    "hand_over_device": "Please hand over this device to the merchant",
+    "enter_code_here": "Enter code here",
+    "verify": "Verify",
+
+    "customer_number": "Customer Number",
+    "code_merchant_below":"Please enter the code you received from the merchant below",
+
+
+
+    "staf_home": "Home",
+    "staf_offer": "Offers",
+    "staf_points": "Points",
+    "staf_rewards": "Rewards",
+    "staf_my_profile": "My Profile",
+    "staf_logout": "Logout",
+
+    "recent_activities": "Recent           Activities",
+
+    "claim_customer_number": "Claim offer with customer number",
+    "claim_customer_des": "Select an offer and enter a customer number to claim this offer for this customer",
+    "claim_offer": "Claim Offer",
+
+    "cutomer_claim_offer": "Below are the options the customer has to claim offers.",
+
+    "generate_code": "Generate Code",
+    "customer_points": "Give Customers Points",
+    "customer_points_des": "Below are the options the customer has to earn points",
+    "redeem_rewards": "Redeem Rewards",
+    "redeem_rewards_des": "Below are the options the customer has to redeem points",
+
+
+    "": "//new",
+    "cus_log":"Customer               Login",
+    "customer_login": "Customer          Sign Up",
+    "login": "LOGIN",
+    "sign_up": "Sign Up",
+    "forgot_password": "Forgot Password?",
+    "forgot_password_no_qmark": "Forgot    Password",
+    "set_new_password": "Set New Password",
+    "submit": "Submit",
+    "i_agree": "I agree to the ",
+    "terms_condition": "Terms and Policy",
+    "your_name": "Your Name",
+    "your_email": "Your Email",
+    "mobile_number": "Mobile Number",
+    "enter_password": "Enter Password",
+    "password": "Password",
+    "otp_code": "OTP Code",
+    "new_password": "New Password",
+    "confirm_new_password": "Confirm New Password",
+
+
+    "generate_code_to_enter": "Generate code to enter on customer's device",
+    "You_can_use_this_code": "You can use this code for as many customers as you want, as long as it is not expired.",
+    "generate": "Generate",
+
+    "customer_displays_a_QR": "The customer displays a QR Code that can be scanned by you",
+    "add_points_to_customer": "Add points to customer account using a customer number",
+    "generate_a_code_to_customer": "Generate a code that can give to the customer",
+
+    "claim_offer_for_this_customer": "Claim Offer for this customer",
+    "you_can_claim_the_offers": "You can claim the offers below",
+    "select_the_offer": "Select the offer",
+    "Select the offer": "Generate a code that can give to the customer",
+    "you_have_successfully_claimed_the_offer": "You have successfully claimed the offer",
+    "thank_you": "Thank You!"
+
+
+}
