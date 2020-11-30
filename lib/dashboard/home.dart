@@ -403,23 +403,19 @@ class _HomeState extends State<Home> {
               child: campaigns.data != null
                   ? Column(
                       children: [
-                        Row(
-                          children: [
-                            Container(
-                              margin: EdgeInsets.only(
-                                  left: SizeConfig.blockSizeHorizontal * 5),
-                              child: Text(
-                                AppLocalization.of(context)
-                                    .getTranslatedValues('LACASA_deals'),
-                                style: TextStyle(
-                                    color: newColor,
-                                    fontSize:
-                                        SizeConfig.blockSizeVertical * 5.5,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Container()
-                          ],
+                        Container(
+                          // margin: EdgeInsets.only(
+                          //     left: SizeConfig.blockSizeHorizontal * 5),
+                          child: Text(
+                            // "lacsa hbgjhfb fhdbdhfbf",
+                            AppLocalization.of(context)
+                                .getTranslatedValues('LACASA_deals'),
+                            style: TextStyle(
+                                color: newColor,
+                                fontSize:
+                                    SizeConfig.blockSizeVertical * 5.5,
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                         SizedBox(
                           height: SizeConfig.blockSizeVertical * 5,

@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(height: SizeConfig.blockSizeVertical * 3),
               Container(
                 margin: EdgeInsets.symmetric(
-                    horizontal: SizeConfig.blockSizeHorizontal * 10),
+                    horizontal: SizeConfig.blockSizeHorizontal * 5),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       AppLocalization.of(context)
                           .getTranslatedValues('welcome_to'),
                       style: TextStyle(
-                          fontSize: SizeConfig.blockSizeVertical * 6,
+                          fontSize: SizeConfig.blockSizeVertical * 5,
                           fontWeight: FontWeight.bold),
                     ),
                     Row(
@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           AppLocalization.of(context)
                               .getTranslatedValues('lacasa_deals'),
                           style: TextStyle(
-                              fontSize: SizeConfig.blockSizeVertical * 6,
+                              fontSize: SizeConfig.blockSizeVertical * 5,
                               fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
