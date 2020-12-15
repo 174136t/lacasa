@@ -58,46 +58,31 @@ class _HomeState extends State<Home> {
       onTap: () {
         setState(() {
           if (index == 0) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  DashBoard()),
-          );
-          }
-          else if (index == 1) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  Offers()),
-          );
-          }
-          else if (index == 2) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  EarnPoints()),
-          );
-          }
-         else if (index == 3) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  RedeemPoints()),
-          );
-          }
-          else if (index == 4) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  Profile()),
-          );
-          }
-          else if(index==5){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DashBoard()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Offers()),
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => EarnPoints()),
+            );
+          } else if (index == 3) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => RedeemPoints()),
+            );
+          } else if (index == 4) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Profile()),
+            );
+          } else if (index == 5) {
             showDialog(
                 context: context,
                 builder: (BuildContext context) {
@@ -157,11 +142,11 @@ class _HomeState extends State<Home> {
       var response =
           await http.get("${Apis.getCampaigns}", headers: MyHeaders.header());
       var jsonResponse = json.decode(response.body);
-      print('header= ${MyHeaders.header()}');
+      print('home campaign header= ${MyHeaders.header()}');
       print((response.body));
-      print("code:${response.statusCode}");
+      print("home campaign code:${response.statusCode}");
 
-      if (jsonResponse['status_code'] == 200 && jsonResponse['result']) {
+      if (jsonResponse['status_code'] == 200 && jsonResponse['result']==true) {
         setState(() {
           campaigns = ChampaignsModal.fromJson(jsonResponse);
           LacasaUser.data.campaignUUID = campaigns.data[0].uuid;
@@ -169,7 +154,7 @@ class _HomeState extends State<Home> {
           isLoading = false;
         });
 
-        //AppRoutes.replace(context, Home());
+        // AppRoutes.replace(context, Home());
 
       } else {
         setState(() {
@@ -205,7 +190,10 @@ class _HomeState extends State<Home> {
         isLoading = false;
       });
       ShowMessage.inSnackBar(_scaffoldKey, value.toString(), true);
-      startTime();
+      // startTime();
+      print('cccccccccccccccccccccccc');
+      print(value.toString());
+      print('cccccccccccccccccccccccccc');
     }
   }
 
@@ -218,9 +206,9 @@ class _HomeState extends State<Home> {
       var response =
           await http.get("${Apis.getAllOffers}", headers: MyHeaders.header());
       var jsonResponse = json.decode(response.body);
-      print('header= ${MyHeaders.header()}');
+      print('home offer header= ${MyHeaders.header()}');
       print((response.body));
-      print("code:${response.statusCode}");
+      print("home offer code:${response.statusCode}");
 
       if (jsonResponse['status_code'] == 200) {
         setState(() {
@@ -260,17 +248,20 @@ class _HomeState extends State<Home> {
       setState(() {
         isLoading = false;
       });
-      ShowMessage.inSnackBar(_scaffoldKey, value.toString(), true);
-      startTime();
+      ShowMessage.inSnackBar(_scaffoldKey, 'Sorry! There are no offers at the moment!', true);
+      print('yyyyyyyyyyyy');
+      print(value.toString());
+      print('yyyyyyyyyyyy');
+      // startTime();
     }
   }
 
-  startTime() async {
-    var _duration = new Duration(seconds: 2);
-    return new Timer(_duration, () {
-      Navigator.pop(context);
-    });
-  }
+  // startTime() async {
+  //   var _duration = new Duration(seconds: 2);
+  //   return new Timer(_duration, () {
+  //     Navigator.pop(context);
+  //   });
+  // }
   /*----------------------------------------------------------------------*/
 
   @override
@@ -412,8 +403,7 @@ class _HomeState extends State<Home> {
                                 .getTranslatedValues('LACASA_deals'),
                             style: TextStyle(
                                 color: newColor,
-                                fontSize:
-                                    SizeConfig.blockSizeVertical * 5.5,
+                                fontSize: SizeConfig.blockSizeVertical * 5.5,
                                 fontWeight: FontWeight.bold),
                           ),
                         ),

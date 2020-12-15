@@ -179,7 +179,8 @@ class _ClaimOfferDialogState extends State<ClaimOfferDialog> {
   _ClaimOfferDialogState({this.offerUUID});
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   static String URL =
-      'https://beta.nqat.me/campaign/iphase-vX/staff#/offers/link?token=';
+      'https://nqatlacasa.herokuapp.com/api/v1/staff/offer/validateQrCodeFormData';
+  // 'https://beta.nqat.me/campaign/iphase-vX/staff#/offers/link?token=';
   String qrData = '';
   void onGenerateQRCode(bool shouldReload) async {
     try {
@@ -2511,15 +2512,15 @@ class _GenerateCodeDialogState extends State<GenerateCodeDialog> {
   Widget actions() {
     return Padding(
       padding: EdgeInsets.only(
-        // left: MediaQuery.of(context).size.width * .1,
-      ),
+          // left: MediaQuery.of(context).size.width * .1,
+          ),
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-         GestureDetector(
+        GestureDetector(
           onTap: () {
             AppRoutes.pop(context);
           },
           child: Container(
-            width: SizeConfig.blockSizeHorizontal*20,
+            width: SizeConfig.blockSizeHorizontal * 20,
             decoration: BoxDecoration(
                 border: Border.all(color: newOffer, width: 1.5),
                 borderRadius: BorderRadius.circular(20)),
@@ -2556,7 +2557,6 @@ class _GenerateCodeDialogState extends State<GenerateCodeDialog> {
           ),
         ),
         // SizedBox(width: 1,),
-       
       ]),
     );
   }
@@ -2572,7 +2572,6 @@ class _GenerateCodeDialogState extends State<GenerateCodeDialog> {
         },
         child: TextFormField(
           controller: generatedCont,
-          
           enabled: false,
           decoration: InputDecoration(
             fillColor: formColor,
@@ -2590,8 +2589,7 @@ class _GenerateCodeDialogState extends State<GenerateCodeDialog> {
                 borderRadius: BorderRadius.circular(20)),
             suffixIcon: GestureDetector(
               onTap: () {
-                Clipboard.setData(
-                    new ClipboardData(text: generatedCont.text));
+                Clipboard.setData(new ClipboardData(text: generatedCont.text));
                 ShowMessage.inSnackBar(_scaffoldKey, "Text Copied", false);
               },
               child: Image.asset(

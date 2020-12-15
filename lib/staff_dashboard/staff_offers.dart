@@ -110,7 +110,9 @@ class _StaffOffersState extends State<StaffOffers> {
           isLoading = false;
         });
       ShowMessage.inSnackBar(
-          _scaffoldKey, value != null ? value.toString() : "error", true);
+          _scaffoldKey, value != null ?
+           value.toString() 
+           : "error", true);
       startTime();
     }
   }

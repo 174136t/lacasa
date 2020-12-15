@@ -110,7 +110,7 @@ class _OffersState extends State<Offers> {
         isLoading = false;
       });
       ShowMessage.inSnackBar(_scaffoldKey, value.toString(), true);
-      startTime();
+      // startTime();
     }
   }
 
@@ -169,7 +169,12 @@ class _OffersState extends State<Offers> {
       setState(() {
         isLoading = false;
       });
-      ShowMessage.inSnackBar(_scaffoldKey, value.toString(), true);
+      ShowMessage.inSnackBar(
+          _scaffoldKey,
+          // 'Sorry! There are no offers at the moment!',
+          value.toString(),
+
+          true);
       // startTime();
     }
   }
@@ -226,17 +231,20 @@ class _OffersState extends State<Offers> {
       setState(() {
         isLoading = false;
       });
-      ShowMessage.inSnackBar(_scaffoldKey, value.toString(), true);
-      startTime();
+      ShowMessage.inSnackBar(_scaffoldKey,
+      'Sorry! There are no offers at the moment!',
+      //  value.toString(), 
+       true);
+      // startTime();
     }
   }
 
-  startTime() async {
-    var _duration = new Duration(seconds: 2);
-    return new Timer(_duration, () {
-      Navigator.pop(context);
-    });
-  }
+  // startTime() async {
+  //   var _duration = new Duration(seconds: 2);
+  //   return new Timer(_duration, () {
+  //     Navigator.pop(context);
+  //   });
+  // }
 
   /*----------------------------------------------------------------------*/
   DateTime currentBackPressTime;
@@ -535,7 +543,7 @@ class _OffersState extends State<Offers> {
                   ),
                 ],
               ),
-               SizedBox(
+              SizedBox(
                 height: SizeConfig.blockSizeVertical * 6,
               ),
               Container(
@@ -547,13 +555,15 @@ class _OffersState extends State<Offers> {
                   padding: const EdgeInsets.all(12.0),
                   child: Row(
                     children: [
-                      SizedBox(width: 10,),
+                      SizedBox(
+                        width: 10,
+                      ),
                       Image.asset(
-                          'assets/images/searchnew.png',
-                          // scale: 5,
-                          filterQuality: FilterQuality.high,
-                          fit: BoxFit.fill,
-                        ),
+                        'assets/images/searchnew.png',
+                        // scale: 5,
+                        filterQuality: FilterQuality.high,
+                        fit: BoxFit.fill,
+                      ),
                       Text(
                         "  Search Offers",
                         style: TextStyle(
@@ -859,47 +869,32 @@ class _OffersState extends State<Offers> {
     return GestureDetector(
       onTap: () {
         setState(() {
-         if (index == 0) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  DashBoard()),
-          );
-          }
-          else if (index == 1) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  Offers()),
-          );
-          }
-          else if (index == 2) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  EarnPoints()),
-          );
-          }
-         else if (index == 3) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  RedeemPoints()),
-          );
-          }
-          else if (index == 4) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) =>
-                  Profile()),
-          );
-          }
-          else if(index ==5){
+          if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DashBoard()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Offers()),
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => EarnPoints()),
+            );
+          } else if (index == 3) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => RedeemPoints()),
+            );
+          } else if (index == 4) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Profile()),
+            );
+          } else if (index == 5) {
             showDialog(
                 context: context,
                 builder: (BuildContext context) {
@@ -908,7 +903,7 @@ class _OffersState extends State<Offers> {
                     child: LogOut(),
                   );
                 });
-          } 
+          }
           // else {
           //   screenMover = index;
           //   AppRoutes.pop(context);

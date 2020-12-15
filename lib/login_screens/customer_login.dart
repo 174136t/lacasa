@@ -61,28 +61,38 @@ class _CustomerLoginState extends State<CustomerLogin> {
         body: body,
       );
       var jsonResponse = json.decode(response.body);
+      print(jsonResponse['result']);
       print('response:\n');
       print((response.body));
       print("code:${response.statusCode}");
       if (response.statusCode == 200) {
-        if (jsonResponse['status_code'] == 200 && jsonResponse['result']) {
+        if (jsonResponse['status_code'] == 200 && jsonResponse['result']==true) {
           setState(() {
+            print('xxxxxxxxxxxxxxxxxxxxxx');
+            print('xxxxxxxxxxxxxxxxxxxxxx');
             print(jsonResponse['data']['token']);
             BEARER_TOKEN = jsonResponse['data']['token'];
             isLoading = false;
+            print('xxxxxxxxxxxxxxxxxxxxxx');
+            print('xxxxxxxxxxxxxxxxxxxxxx');
           });
           api.getUserInfo(_scaffoldKey).then((value) {
             print(LacasaUser.data.user.data.name);
-            AppRoutes.replace(context, DashBoard());
+            AppRoutes.push(context, DashBoard());
           });
         } else {
           setState(() {
             isLoading = false;
           });
+          // print('xxxxxxxxxxxxxxxxxxxxxx');
+          // print('xxxxxxxxxxxxxxxxxxxxxx');
+          print(jsonResponse.toString());
           ShowMessage.showErrorSnackBar(
             _scaffoldKey,
             jsonResponse,
           );
+          // print('xxxxxxxxxxxxxxxxxxxxxx');
+          // print('xxxxxxxxxxxxxxxxxxxxxx');
         }
       } else {
         setState(() {

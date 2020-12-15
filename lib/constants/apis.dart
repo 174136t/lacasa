@@ -1,5 +1,7 @@
 class Apis {
-  static String BASE_URL = 'https://lacasa.nqat.me/public/api/v1/';
+  static String BASE_URL ='https://lacasa.nqat.me/public/api/v1/';
+  static String Base_Url1= 'https://nqatlacasa.herokuapp.com/api/v1';
+  
 //      "http://203.88.157.74:8001/loyaltyProgram_API/public/api/v1/";
   static String signup = BASE_URL + "signup";
   static String isEmailAvailable = BASE_URL + "isEmailAvailable";

@@ -42,7 +42,8 @@ class _RedeemRewardOptionsState extends State<RedeemRewardOptions> {
   /*-------------------------------- Methods------------------------------*/
 
   static String URL =
-      'https://beta.nqat.me/campaign/iphase-vX/staff#/rewards/link?token=';
+      'https://nqatlacasa.herokuapp.com/api/v1/staff#/rewards/link?token=';
+  // 'https://beta.nqat.me/campaign/iphase-vX/staff#/rewards/link?token=';
   String qrData = '';
   void onGenerateQRCode(bool shouldReload) async {
     try {
@@ -268,17 +269,17 @@ class _RedeemRewardOptionsState extends State<RedeemRewardOptions> {
                           child: Padding(
                               padding: EdgeInsets.only(
                                   left: MediaQuery.of(context).size.width * .03,
-
-                                  right: MediaQuery.of(context).size.width * .03,
-
+                                  right:
+                                      MediaQuery.of(context).size.width * .03,
                                   top: MediaQuery.of(context).size.height * .03,
                                   bottom: MediaQuery.of(context).size.height *
                                       .009),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  SizedBox(height:    SizeConfig.blockSizeVertical*5,),
-                               
+                                  SizedBox(
+                                    height: SizeConfig.blockSizeVertical * 5,
+                                  ),
                                   Padding(
                                     padding: EdgeInsets.only(
                                         left:
@@ -293,7 +294,8 @@ class _RedeemRewardOptionsState extends State<RedeemRewardOptions> {
                                     child: Center(
                                       child: Text(
                                         AppLocalization.of(context)
-                                            .getTranslatedValues("redeem_reward"),
+                                            .getTranslatedValues(
+                                                "redeem_reward"),
                                         style: TextStyle(
                                             color: newColor,
                                             fontSize: MediaQuery.of(context)
@@ -304,7 +306,9 @@ class _RedeemRewardOptionsState extends State<RedeemRewardOptions> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: SizeConfig.blockSizeVertical*3,),
+                                  SizedBox(
+                                    height: SizeConfig.blockSizeVertical * 3,
+                                  ),
                                   list(1, 'qr_code', qrImage, 'show_qr_code'),
                                   list(2, 'merchant_enter_code', merchant,
                                       'give_phone'),
@@ -363,15 +367,13 @@ class _RedeemRewardOptionsState extends State<RedeemRewardOptions> {
           // color: Colors.red,
           // height: SizeConfig.blockSizeVertical*10,
           decoration: BoxDecoration(
-borderRadius: BorderRadius.circular(30),
-border: Border.all(color: newOffer,width: 2)
-          ),
+              borderRadius: BorderRadius.circular(30),
+              border: Border.all(color: newOffer, width: 2)),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-              
                 Expanded(
                   flex: 3,
                   child: Padding(
@@ -383,9 +385,11 @@ border: Border.all(color: newOffer,width: 2)
                         Row(
                           children: [
                             Text(
-                              AppLocalization.of(context).getTranslatedValues(title),
+                              AppLocalization.of(context)
+                                  .getTranslatedValues(title),
                               style: TextStyle(
-                                  fontSize: MediaQuery.of(context).size.height * .019,
+                                  fontSize:
+                                      MediaQuery.of(context).size.height * .019,
                                   color: Color(0xff081F32),
                                   fontWeight: FontWeight.bold),
                             ),
@@ -398,9 +402,11 @@ border: Border.all(color: newOffer,width: 2)
                           AppLocalization.of(context)
                               .getTranslatedValues(description),
                           style: TextStyle(
-                              fontSize: MediaQuery.of(context).size.height * .018,
+                              fontSize:
+                                  MediaQuery.of(context).size.height * .018,
                               color: Color(0xff081F32).withOpacity(.60),
-                              height: MediaQuery.of(context).size.height * .0025),
+                              height:
+                                  MediaQuery.of(context).size.height * .0025),
                           overflow: TextOverflow.clip,
                         ),
                         // Container()
@@ -416,7 +422,7 @@ border: Border.all(color: newOffer,width: 2)
                     ),
                   ),
                 ),
-                  Expanded(
+                Expanded(
                   flex: 1,
                   child: Column(
                     children: [
@@ -543,8 +549,9 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
           child: ModalProgressHUD(
             inAsyncCall: isLoading,
             child: SingleChildScrollView(
-                          child: Container(
-                  padding: EdgeInsets.only(top: SizeConfig.blockSizeVertical * 5),
+              child: Container(
+                  padding:
+                      EdgeInsets.only(top: SizeConfig.blockSizeVertical * 5),
                   width: SizeConfig.blockSizeHorizontal * 100,
                   height: SizeConfig.blockSizeVertical * 100,
                   child: Column(
@@ -566,12 +573,13 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                             // mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: <Widget>[
-                                 Center(
-                                                  child: Image.asset(mall_english,
-                                                  height:MediaQuery.of(context)
-                                                          .size
-                                                          .height *0.2 ,),
-                                                ),
+                              Center(
+                                child: Image.asset(
+                                  mall_english,
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.2,
+                                ),
+                              ),
                               Container(
                                   alignment: Alignment.topLeft,
                                   child: Row(
@@ -592,8 +600,8 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                                     ],
                                   )),
                               SizedBox(
-                                  height:
-                                      MediaQuery.of(context).size.height * .015),
+                                  height: MediaQuery.of(context).size.height *
+                                      .015),
                               Row(
                                 children: [
                                   Container(
@@ -606,9 +614,10 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                                           .getTranslatedValues(
                                               "hand_over_device"),
                                       style: TextStyle(
-                                          fontSize:
-                                              MediaQuery.of(context).size.height *
-                                                  .018,
+                                          fontSize: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              .018,
                                           color: Colors.black87),
                                       textAlign: TextAlign.left,
                                     ),
@@ -620,12 +629,12 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                                   height:
                                       MediaQuery.of(context).size.height * .02),
                               Container(
-                                height: MediaQuery.of(context).size.height * .065,
+                                height:
+                                    MediaQuery.of(context).size.height * .065,
                                 // width: MediaQuery.of(context).size.width * .6,
                                 decoration: BoxDecoration(
-                                  color: formColor,
-                                  borderRadius: BorderRadius.circular(20)
-                                ),
+                                    color: formColor,
+                                    borderRadius: BorderRadius.circular(20)),
                                 child: TextFormField(
                                   controller: enteredCodeCont,
                                   decoration: InputDecoration(
@@ -691,18 +700,23 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                                   alignment: Alignment.bottomRight,
                                   child: Padding(
                                     padding: EdgeInsets.only(
-                                      left:
-                                          MediaQuery.of(context).size.width * .1,
+                                      left: MediaQuery.of(context).size.width *
+                                          .1,
                                     ),
                                     child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.end,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
                                         children: [
-                                            Expanded(
+                                          Expanded(
                                             flex: 1,
                                             child: OutlineButton(
                                               // elevation: 0,
-                                              borderSide: BorderSide(color: newOffer,width: 1.5),
-                                              shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
+                                              borderSide: BorderSide(
+                                                  color: newOffer, width: 1.5),
+                                              shape: new RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      new BorderRadius.circular(
+                                                          30.0)),
                                               padding: EdgeInsets.only(left: 0),
                                               onPressed: () {
                                                 AppRoutes.pop(context);
@@ -710,7 +724,8 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                                               color: Colors.white,
                                               child: Text(
                                                 AppLocalization.of(context)
-                                                    .getTranslatedValues("close"),
+                                                    .getTranslatedValues(
+                                                        "close"),
                                                 style: TextStyle(
                                                     fontSize:
                                                         MediaQuery.of(context)
@@ -721,13 +736,16 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                                               ),
                                             ),
                                           ),
-                                          SizedBox(width: 15,),
+                                          SizedBox(
+                                            width: 15,
+                                          ),
                                           Expanded(
                                             flex: 1,
                                             child: MaterialButton(
                                               shape: RoundedRectangleBorder(
                                                   borderRadius:
-                                                      BorderRadius.circular(15)),
+                                                      BorderRadius.circular(
+                                                          15)),
                                               padding: EdgeInsets.only(
                                                   left: 0, top: 0, bottom: 0),
                                               onPressed: () {
@@ -754,7 +772,6 @@ class _MerchantEnterCodeState extends State<MerchantEnterCode> {
                                               ),
                                             ),
                                           ),
-                                        
                                         ]),
                                   ),
                                 ),
