@@ -165,6 +165,8 @@
     "add_points_to_customer": "Add points to customer account using a customer number",
     "generate_a_code_to_customer": "Generate a code that can give to the customer",
 
+    "coming_soon": "Coming soon...",
+
     "claim_offer_for_this_customer": "Claim Offer for this customer",
     "you_can_claim_the_offers": "You can claim the offers below",
     "select_the_offer": "Select the offer",

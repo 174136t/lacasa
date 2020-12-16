@@ -271,6 +271,13 @@ class _CampaignState extends State<Campaign> {
                   SizedBox(
                     height: MediaQuery.of(context).size.height * .02,
                   ),
+                  Text(
+                    AppLocalization.of(context)
+                    .getTranslatedValues("coming_soon"),
+                        style: TextStyle(
+                            fontSize: SizeConfig.blockSizeVertical * 2.5,
+                            color: newBlack.withOpacity(0.6)),                  
+                  ),                  
                   Column(
                     children: List.generate(
                         EmptyList.isTrue(campaigns.data)

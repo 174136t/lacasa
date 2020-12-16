@@ -396,6 +396,13 @@ class _OffersState extends State<Offers> {
               SizedBox(
                 height: SizeConfig.blockSizeVertical * 3,
               ),
+              Text(
+                AppLocalization.of(context)
+                  .getTranslatedValues("coming_soon"),
+                    style: TextStyle(
+                      fontSize: SizeConfig.blockSizeVertical * 2.5,
+                      color: newBlack.withOpacity(0.6)),                      
+                  ), 
               Row(
                 children: [
                   Expanded(

@@ -154,6 +154,9 @@
     "new_password": "كلمة مرور جديدة",
     "confirm_new_password": "تأكيد كلمة المرور الجديدة",
 
+    
+    "coming_soon": "قريبا",
+
     "customer_displays_a_QR": "يعرض العميل رمز الاستجابة السريعة QR Code الذي يمكنك مسحه ضوئيًا",
     "add_points_to_customer": "أضف النقاط إلى حساب العميل باستخدام رقم العميل",
     "generate_a_code_to_customer": "قم بإنشاء رمز يمكن أن يقدم للعميل"
